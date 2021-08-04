@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClothingStore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="grid main">
+        <div id="home" class="grid wide wrapper">
+            <div class="row separate-site">
+                <div class="navigation-sidebar">
+                    <div class="sidebar__logo">
+                        <strong>logo</strong>
+                    </div>
+                    <label for="check">
+                        <div class="navigation-sidebar__cate-hamburger">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </label>
+                </div>
+                <input type="checkbox" name="" id="check">
+                <div class="col l-2-4 m-0 c-0 sidebar">
+                    <label for="check">
+                        <i class="fas fa-times close-sidebar"></i>
+                    </label>
+                    <div class="sidebar__logo">
+                        <strong>logo</strong>
+                    </div>
+                    <div class="sidebar__cate">
+                        <ul class="sidebar__menu">
+                            <li class="sidebar__item"><a class="sidebar__item-link" href="#home">Shirts</a></li>
+                            <li class="sidebar__item"><a class="sidebar__item-link" href="">Dresses</a></li>
+                            <li class="sidebar__item">
+                                <a class="sidebar__item-link sidebar__item-link--active" href="">
+                                    Jeans
+                                    <i class="fas fa-sort-down "></i>
+                                </a>
+                                <input type="checkbox" name="" id="">
+                                <ul class="sidebar__sub-menu">
+                                    <li class="sidebar__sub-item">
+                                        <a class="sidebar__item-link sidebar__item-link--active" href="">
+                                            <i class="fas fa-caret-right"></i>
+                                            Skinny
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__sub-item"><a class="sidebar__item-link" href="">Relaxed</a></li>
+                                    <li class="sidebar__sub-item"><a class="sidebar__item-link" href="">Bootcut</a></li>
+                                    <li class="sidebar__sub-item"><a class="sidebar__item-link" href="">Straight</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar__item"><a class="sidebar__item-link" href="">Jackets</a></li>
+                            <li class="sidebar__item"><a class="sidebar__item-link" href="">Gymwear</a></li>
+                            <li class="sidebar__item"><a class="sidebar__item-link" href="">Blazers</a></li>
+                            <li class="sidebar__item"><a class="sidebar__item-link" href="">Shoes</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar__contact">
+                        <ul class="sidebar__contact-menu">
+                            <li class="sidebar__contact-item"><a class="sidebar__contact-item-link"
+                                    href="#contact">Contact</a>
+                            </li>
+                            <li class="sidebar__contact-item">
+                                <a class="sidebar__contact-item-link" href="">Newsletter</a>
+                                <input type="checkbox" name="" id="check-news-letter">
+                                <div class="col l-12 m-12 c-12 content__category-ctm-services content__category-ctm-services-news-letter">
+                                    <h1>NEWSLETTER</h1>
+                                    <span>Join our mailing list to receive updates on new arrivals and special offers.</span>
+                                    <form action="" class="content__category-ctm-services-form">
+                                        <input type="email" value="" placeholder="Enter e-mail" required>
+                                        <input type="submit" value="Subcribe">
+                                    </form>
+                                    <label for="check-news-letter">
+                                        <i class="fas fa-times close-sidebar close-newsletter"></i>
+                                    </label>
+                                </div>
+                                <div class="shadow-when-check-news-letter"></div>
+                            </li>
+                            <li class="sidebar__contact-item">
+                                <a class="sidebar__contact-item-link" href="#subcribe">Subscribe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-9-6 m-12 c-12 content">
+                    <div class="row separate-site content__category">
+                        <div class="col l-12 content__category-head">
+                            <h3 class="content__category-head-title">Jeans</h3>
+                            <div class="content__category-head-purchasing">
+                                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                                <a href=""><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="col l-12 content__category-slider">
+                            <img src="./assets/img/silder/slider1.jpg" alt="">
+                            <div class="content__category-head-collection">
+                                <h1>New arrivals</h1>
+                                <h3>COLLECTION 2016</h3>
+                                <a href="" class="">SHOP NOW</a>
+                            </div>
+                            <div class="content__category-slider-moving-block">
+                                <ul>
+                                    <li class="content__category-slider-moving-block-item--active"></li>
+                                    <li class=""></li>
+                                    <li class=""></li>
+                                    <li class=""></li>
+                                    <li class=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-12 content__category-prods">
+                            <div class="l-12 content__category-prods-amount">
+                                <h3>8 items</h3>
+                            </div>
+                            <ul class="row separate-site content__category-prods-menu">
+                                <li class="col l-3 m-6 c-6 content__category-prods-item">
+                                    <div class="content__category-prods-item--new">New</div>
+                                    <a href="" class="content__category-prods-item--btn-buy-now">Buy now
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <img src="./assets/img/jean-products/jeans1.jpg" alt=""
+                                        class="content__category-prods-item-img">
+                                    <div class="content__category-prods-item-purchasing">
+                                        <h3 class="content__category-prods-item-name">Ripped Skinny Jeans</h3>
+                                        <span class="content__category-prods-item-value">$24.99</span>
+                                    </div>
+                                </li>
+                                <li class="col l-3 m-6 c-6 content__category-prods-item">
+                                    <img src="./assets/img/jean-products/jeans2.jpg" alt=""
+                                        class="content__category-prods-item-img">
+                                    <div class="content__category-prods-item-purchasing">
+                                        <h3 class="content__category-prods-item-name">Ripped Skinny Jeans</h3>
+                                        <span class="content__category-prods-item-value">$24.99</span>
+                                    </div>
+                                </li>
+                                <li class="col l-3 m-6 c-6 content__category-prods-item">
+                                    <img src="./assets/img/jean-products/jeans3.jpg" alt=""
+                                        class="content__category-prods-item-img">
+                                    <div class="content__category-prods-item-purchasing">
+                                        <h3 class="content__category-prods-item-name">Ripped Skinny Jeans</h3>
+                                        <span class="content__category-prods-item-value">$24.99</span>
+                                    </div>
+                                </li>
+                                <li class="col l-3 m-6 c-6 content__category-prods-item">
+                                    <img src="./assets/img/jean-products/jeans4.jpg" alt=""
+                                        class="content__category-prods-item-img">
+                                    <div class="content__category-prods-item-purchasing">
+                                        <h3 class="content__category-prods-item-name">Ripped Skinny Jeans</h3>
+                                        <span class="content__category-prods-item-value">$24.99</span>
+                                    </div>
+                                </li>
+                                <li class="col l-3 m-6 c-6 content__category-prods-item">
+                                    <img src="./assets/img/jean-products/jeans2.jpg" alt=""
+                                        class="content__category-prods-item-img">
+                                    <div class="content__category-prods-item-purchasing">
+                                        <h3 class="content__category-prods-item-name">Ripped Skinny Jeans</h3>
+                                        <span class="content__category-prods-item-value">$24.99</span>
+                                    </div>
+                                </li>
+                                <li class="col l-3 m-6 c-6 content__category-prods-item">
+                                    <img src="./assets/img/jean-products/jeans3.jpg" alt=""
+                                        class="content__category-prods-item-img">
+                                    <div class="content__category-prods-item-purchasing">
+                                        <h3 class="content__category-prods-item-name">Ripped Skinny Jeans</h3>
+                                        <span class="content__category-prods-item-value">$24.99</span>
+                                    </div>
+                                </li>
+                                <li class="col l-3 m-6 c-6 content__category-prods-item">
+                                    <div class="content__category-prods-item--sale">Sale</div>
+                                    <a href="" class="content__category-prods-item--btn-buy-now">Buy now
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <img src="./assets/img/jean-products/jeans1.jpg" alt=""
+                                        class="content__category-prods-item-img">
+                                    <div class="content__category-prods-item-purchasing">
+                                        <h3 class="content__category-prods-item-name">Ripped Skinny Jeans</h3>
+                                        <span class="content__category-prods-item-value">$24.99</span>
+                                    </div>
+                                </li>
+                                <li class="col l-3 m-6 c-6 content__category-prods-item">
+                                    <img src="./assets/img/jean-products/jeans4.jpg" alt=""
+                                        class="content__category-prods-item-img">
+                                    <div class="content__category-prods-item-purchasing">
+                                        <h3 class="content__category-prods-item-name">Ripped Skinny Jeans</h3>
+                                        <span class="content__category-prods-item-value">$24.99</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="subcribe" class="col l-12 m-12 c-12 content__category-ctm-services">
+                            <h1>Subscribe</h1>
+                            <span>To get special offers and VIP treatment:</span>
+                            <form action="" class="content__category-ctm-services-form">
+                                <input type="email" value="" placeholder="Enter e-mail" required>
+                                <input type="submit" value="Subcribe">
+                            </form>
+                        </div>
+                        <div id="contact" class="col l-12 m-12 c-12 content__category-contact">
+                            <div class="row sm-gutter content__category-contact-wrapper">
+                                <div class="col l-4 m-4 c-12 content__category-contact-main">
+                                    <h4>Contact</h4>
+                                    <span>Questions? Go ahead.</span>
+                                    <form action="" class="content__category-contact-main-form">
+                                        <input type="text" name="" id="" placeholder="Name" required>
+                                        <input type="email" name="" id="" placeholder="Email" required>
+                                        <input type="text" name="" id="" placeholder="Subject" required>
+                                        <input type="text" name="" id="" placeholder="Message" required>
+                                        <input type="submit" name="" id="" value="SEND">
+                                    </form>
+                                </div>
+                                <div class="col l-4 m-4 c-12 content__category-contact-about">
+                                    <h4>About</h4>
+                                    <ul class="content__category-contact-about-menu">
+                                        <li class="content__category-contact-about-item"><a href=""
+                                                class="content__category-contact-about-link">About us</a></li>
+                                        <li class="content__category-contact-about-item"><a href=""
+                                                class="content__category-contact-about-link">We're hiring</a></li>
+                                        <li class="content__category-contact-about-item"><a href=""
+                                                class="content__category-contact-about-link">Support</a></li>
+                                        <li class="content__category-contact-about-item"><a href=""
+                                                class="content__category-contact-about-link">Find store</a></li>
+                                        <li class="content__category-contact-about-item"><a href=""
+                                                class="content__category-contact-about-link">Shipment</a></li>
+                                        <li class="content__category-contact-about-item"><a href=""
+                                                class="content__category-contact-about-link">Payment</a></li>
+                                        <li class="content__category-contact-about-item"><a href=""
+                                                class="content__category-contact-about-link">Gift card</a></li>
+                                        <li class="content__category-contact-about-item"><a href=""
+                                                class="content__category-contact-about-link">Return</a></li>
+                                        <li class="content__category-contact-about-item"><a href=""
+                                                class="content__category-contact-about-link">Help</a></li>
+                                    </ul>
+                                </div>
+                                <div
+                                    class="col l-4 m-4 c-12 content__category-contact-store content__category-contact-store--separate">
+                                    <h4>Store</h4>
+                                    <ul class="content__category-contact-store-address-menu">
+                                        <li class="content__category-contact-store-address-item"><i
+                                                class="fas fa-map-marker-alt"></i><span>Company Name</span></li>
+                                        <li class="content__category-contact-store-address-item"><i
+                                                class="fas fa-phone-volume"></i><span>0044123123</span></li>
+                                        <li class="content__category-contact-store-address-item"><i
+                                                class="fas fa-envelope"></i><span>ex@mail.com</span></li>
+                                    </ul>
+                                    <div
+                                        class="content__category-contact-we-accept content__category-contact-we-accept--separate">
+                                        <h4>We accept</h4>
+                                        <ul class="content__category-contact-we-accept-menu">
+                                            <li class="content__category-contact-we-accept-item"><i
+                                                    class="fab fa-cc-amex"></i><span>Amex</span></li>
+                                            <li class="content__category-contact-we-accept-item"><i
+                                                    class="fas fa-credit-card"></i><span>Credit Card</span></li>
+                                        </ul>
+                                    </div>
+                                    <h4><i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i><i
+                                            class="fab fa-snapchat"></i><i class="fab fa-pinterest-p"></i><i
+                                            class="fab fa-twitter"></i><i class="fab fa-linkedin-in"></i></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__footer">
+                            <h4>Powered by <a href="">w3.css</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-when-check"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

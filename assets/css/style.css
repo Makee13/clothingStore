@@ -1,0 +1,563 @@
+/* Navigation-sidebar section */
+.wrapper {
+    position: relative;
+}
+
+.navigation-sidebar {
+    display: none;
+    position: fixed;
+    max-height: 86.4px;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-sidebar__cate-hamburger {
+    font-size: 32px;
+    padding: 20px 32px;
+}
+
+.navigation-sidebar__cate-hamburger:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.navigation-sidebar input {
+    position: fixed;
+}
+/* Sidebar-section */
+
+.close-sidebar {
+    position: absolute;
+    color: #000;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: #ffff;
+    overflow-y: scroll;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    animation: growthSidebar 0.2s ease;
+}
+
+.sidebar label i:not(.close-newsletter) {
+    display: none;
+}
+
+.sidebar label i:hover {
+    background-color: #ccc;
+}
+
+.close-newsletter {
+    padding: 20px!important;
+    font-size: 30px!important;
+}
+
+.sidebar__logo {
+    padding: 26px 16px 26px 16px;
+}
+
+.sidebar__logo strong {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+
+.sidebar > div{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sidebar__menu {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    position: relative;
+}
+
+.sidebar__item {
+    position: relative;
+}
+.sidebar__contact-item a,
+.sidebar__item a{
+    padding: 8px 16px 8px 16px;
+}
+
+.sidebar__item input {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 4.24rem;
+    width: 100%;
+    opacity: 0;
+    border: 0;
+}
+
+.sidebar__item input:checked + ul {
+    display: block;
+}
+
+.sidebar__sub-menu {
+    display: none;
+}
+.sidebar__contact-menu > li:hover > a,
+.sidebar__sub-menu > li:hover > a,
+.sidebar__menu > li:hover > a {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* 
+.sidebar__item:hover .sidebar__item-link {
+    color: #000;
+} */
+
+.sidebar__sub-menu {
+    margin: 14px 0 14px 20px;
+}
+
+.sidebar__sub-menu a {
+    font-size: 14px;
+}
+
+.sidebar__contact-item {
+    position: relative;
+}
+
+.sidebar__contact-item-link,
+.sidebar__item-link {
+    display: block;
+    color: #757575;
+    position: relative;
+}
+
+.sidebar__contact-item-link {
+    text-decoration: underline;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.content__category-ctm-services-news-letter {
+    animation: growth 0.2s ease-in;
+    z-index: 8;
+}
+
+.sidebar__contact-item-link + input:checked ~ .shadow-when-check-news-letter,
+.sidebar__contact-item-link + input:checked + .content__category-ctm-services-news-letter {
+    display: block!important;
+}
+
+.sidebar__contact-item-link + #check-news-letter {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    border: none;
+}
+
+.sidebar__item-link > i {
+    min-width: 20px;
+}
+
+.sidebar__item > a i {
+    transform: translateY(-5%);
+}
+.sidebar__item-link--active{
+    color: #000;
+    background-color: rgb(243, 239, 239)!important;
+}
+/* Content Section */
+
+.content {
+    margin-left: 20%;
+}
+
+.content__category {
+    
+}
+
+.content__category-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.content__category-head::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content__category-head-purchasing,
+.content__category-head-title {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: inline-block!important;
+}
+
+.content__category-head-title {
+    float: left;
+    flex: 1;
+}
+
+.content__category-head-purchasing {
+    float: right;
+}
+
+.content__category-head-purchasing i {
+    padding-left: 16px;
+    color: #000;
+}
+.content__category-slider {
+    max-height: 60rem;
+    position: relative;
+}
+
+.content__category-head-collection {
+    position: absolute;
+    top: 24px;
+    left: 48px;
+}
+
+.content__category-head-collection h1 {
+    font-size: 64px;
+}
+
+.content__category-head-collection h3 {
+    font-size: 36px;
+} 
+
+.content__category-head-collection h1,
+.content__category-head-collection h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+}
+
+.content__category-head-collection a {
+    display: block;
+    padding: 12px 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 156px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.content__category-head-collection a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.content__category-slider img {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+}
+
+.content__category-slider-moving-block {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content__category-slider-moving-block ul {
+    display: flex;
+}
+.content__category-slider-moving-block li {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    opacity: 0.6;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.content__category-slider-moving-block-item--active {
+    background: rgb(176, 221, 215)!important; 
+}
+
+.content__category-prods {
+
+}
+
+.content__category-prods-amount h3 {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #757575;
+    font-weight: 400;
+}
+
+.content__category-prods-menu {
+
+}
+
+.content__category-prods-item {
+    position: relative;
+}
+
+.content__category-prods-item--btn-buy-now,
+.content__category-prods-item--sale,
+.content__category-prods-item--new {
+    position: absolute;
+    font-size: 14px;
+    color: #fff;
+    background-color: #000;
+    padding: 6px 10px;
+    top: 0;
+    left: 16px;
+    z-index: 1;
+}
+
+.content__category-prods-item--btn-buy-now {
+    display: none;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 8px 16px;
+}
+
+.content__category-prods-item--btn-buy-now:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.content__category-prods-item:hover .content__category-prods-item--btn-buy-now {
+    display: inline-block;
+}
+
+.content__category-prods-item-img {
+    display: block;
+    width: 100%;
+    filter: grayscale(60%);
+    object-fit: cover;
+}
+
+.content__category-prods-item-name {
+    font-weight: 400;
+}
+
+.content__category-prods-item-purchasing {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.content__category-prods-item-value {
+    font-weight: bolder;
+}
+
+.content__category-ctm-services {
+    color: #fff;
+    background-color: #000;
+    padding: 32px 16px;
+}
+
+.content__category-ctm-services h1 {
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.content__category-ctm-services span {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.content__category-ctm-services-news-letter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    padding: 32px 48px!important;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    display: none;
+}
+
+.content__category-ctm-services-news-letter h1,
+.content__category-ctm-services-news-letter span {
+    font-weight: 400;
+}
+
+.content__category-ctm-services-news-letter input:first-child {
+    width: 80.5rem!important;
+}
+
+.content__category-ctm-services-news-letter input:last-child {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.content__category-ctm-services-form {
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.content__category-ctm-services-form input:first-child  {
+    padding: 11.2px 8px;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid #ccc;
+}
+
+.content__category-ctm-services-form input:last-child {
+    display: block;
+    padding: 11px 18px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #f44336;
+    margin-top: 15px;
+}
+.content__category-contact-main-form > input:last-child:hover,
+.content__category-ctm-services-form input:last-child:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Contact Section */
+.content__category-contact {
+    background-color: #f1f1f1;
+    padding: 64px 0;
+}
+
+.content__category-contact-wrapper {
+
+}
+
+.content__category-contact-wrapper > div {
+    text-align: center;
+}
+.content__category-contact-we-accept > h4,
+.content__category-contact-wrapper > div > h4 {
+    display: block;
+    font-size: 20px;
+    text-transform: initial;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.content__category-contact-main-form > input,
+.content__category-contact-wrapper > div > span,
+.content__category-contact-about-link,
+.content__category-contact-store-address-item,
+.content__category-contact-we-accept-item {
+    display: block;
+    font-size: 12px;
+    margin: 12px 0;
+}
+
+.content__category-contact-main {
+
+}
+
+.content__category-contact-main-form {
+
+}
+
+.content__category-contact-main-form > input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.content__category-contact-main-form > input:last-child {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+.content__category-contact-about {
+
+}
+
+.content__category-contact-about-link {
+    color: #000;
+    text-decoration: underline;
+}
+
+.content__category-contact-about-menu {
+
+}
+
+.content__category-contact-about-item {
+
+}
+
+.content__category-contact-store > h4 > i {
+    font-size: 16px;
+    min-width: 20px;
+}
+
+.content__footer a:hover,
+.content__category-contact-store > h4 > i:hover {
+    opacity: 0.6;
+}
+
+.content__category-contact-store-address-item i,
+.content__category-contact-we-accept-item i {
+    min-width: 20px;
+}
+
+.content__footer {
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 24px 0;
+}
+.content__footer a,
+.content__footer h4 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+.content__footer a {
+    text-decoration: underline;
+}
+
+/* Shadow when check section */
+
+.shadow-when-check,
+.shadow-when-check-news-letter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.2;
+    z-index: 1;
+    display: none;
+}
+
